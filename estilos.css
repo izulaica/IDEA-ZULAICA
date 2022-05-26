@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(254, 227, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    /* margin: auto; */
+    overflow: hidden;
+}
+
+.logo{
+    width: auto;
+    height: 100%;
+}
+
+/* header .logo{
+    float: left;
+} */
+header nav{
+    float: right;
+    width: 80%;
+}
+header ul{
+    list-style: none;
+    font-family: 'Amatic SC';
+    font-size: 0;
+    text-transform: capitalize;
+}
+header ul li{
+    /* float: left; */
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    font-size: 30px;
+    padding: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #ED7878;
+}
+nav a:hover{
+    color: #df2e64;
+}
+@media screen and (max-width: 768px){
+    header ul li{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:600px){
+    header ul li{
+        font-size: 18px;
+    }    
+}
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .logo{
+        float: none;
+        align-items: center;
+        text-align: center;
+    }
+    nav ul li{
+        float: none;
+        padding: 15px;
+    }
+}
+
+
+/*  TERMINA HEADER  */
+body{
+    background-image: url(imagenes/RNI-Films-IMG-E09D57B2-B39A-4387-B63D-F41F1977A950.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body{
+    font-family: 'Amatic SC', 'trebuchet MS', 'Arial';
+    line-height: 1,7em;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(255, 68, 68);
+    text-align: center;
+}
+section{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#inicio{
+    min-height: 900px;
+    /* background-image: url(imagenes/RNI-Films-IMG-E09D57B2-B39A-4387-B63D-F41F1977A950.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+.contenedor{
+    width: 100%;
+    min-height: 600px;
+    display: grid;
+    padding: 20px;
+    grid-gap: 15px;
+}
+.img{
+    border-radius: 8%;
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.img1{
+    background-image: url(imagenes/RNI-Films-IMG-5664FB42-DE3A-41B7-8638-F4A6054BF094.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background-image: url(imagenes/RNI-Films-IMG-9F15178B-E8B1-40CD-A455-03DD2391EA95.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.img3{
+    background-image: url(imagenes/RNI-Films-IMG-5770AD6F-9049-415D-B0D5-F7D34D5F369C.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.img4{
+    background-image: url(imagenes/RNI-Films-IMG-9F9C5F58-3BAD-4E1A-92CE-BA4C4B7FB1BA.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.img5{
+    background-image: url(imagenes/RNI-Films-IMG-B938F0C3-5A27-4EA9-B0F9-C3262EADB382.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+@media only screen and (max-width:319px) {
+    .img{
+        height: 200px;
+    }   
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media  only screen and (min-width:480px) and (max-width: 600px) {
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .contenedor{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .contenedor{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    
+    }
+    .img1{
+        grid-column: 1/4;
+        grid-row: 1/3;
+    }
+    .img2{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    .img5{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+}
+.ig{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 68, 68);
+    border: 2px solid rgb(255, 2, 2);
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+.ig i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 50px;
+    text-shadow: 0 0 10px #000;
+}
+.familia{
+    height: 50px;
+    font-size: 50px;
+    color: rgb(255, 68, 68);
+    text-align: center;
+    background-color: rgb(252, 226, 216);
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sec{
+    min-height: 900px;
+    background-color: rgb(255, 68, 68);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.producto:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+.producto{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(252, 226, 216);
+    border: 2px solid rgb(255, 68, 68);
+}
+.sec1{
+    background-image: url(imagenes/RNI-Films-IMG-2ECE9CFE-A604-4A85-ACE2-12F11F5FFDB2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec2{
+    background-image: url(imagenes/RNI-Films-IMG-2CB9C2B8-DFD8-4CF9-87B4-59BDD4E940DC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec3{
+    background-image: url(imagenes/RNI-Films-IMG-7D3F1D41-C0E8-425D-8E97-146EDB5139B2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec6{
+    background-image: url(imagenes/RNI-Films-IMG-BC333D70-6839-479E-A6AF-77EE3EF5F96E.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec4{
+    background-image: url(imagenes/IMG_6254.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec5{
+    background-image: url(imagenes/RNI-Films-IMG-FCF62B6D-D155-4B1C-A1B3-ABBD7CE2D980.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.sec7{
+    background-image: url(imagenes/RNI-Films-IMG-6D01F60B-4F90-449D-8F8E-A1DC1D2D7858.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#nos{
+    text-transform: uppercase;
+    text-align: center;
+}
+.nos{
+    min-height: 1700px;
+    width: 100%;
+    background-image: url(imagenes/RNI-Films-IMG-02D69B59-7E81-4C6E-B1DA-DB2FEADE2BB6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nosotros{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    color: rgb(252, 226, 216);
+}
+.agus{
+    margin-top: 100px;
+    margin-left: auto;
+}
+.pnos{
+    width: 400px;
+    margin-left: 500px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: rgb(252, 226, 216);
+}
+.video{
+    margin-left: 400px;
+}
+
+
+/* ---------------------------EMPIEZA CONTACTO------------------------------- */
+
+
+.contacto{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cont{
+    width: 50%;
+    height: 100%;
+}
+.contacto1{
+    background-color: #ED7878;
+}
+.contacto2{
+    background-image: url(imagenes/RNI-Films-IMG-02D69B59-7E81-4C6E-B1DA-DB2FEADE2BB6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#contacto{
+    font-size: 40px;
+    border: solid rgb(255, 68, 68);
+    background-color: rgb(252, 226, 216);
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact_form{  
+    /* width: 100%;  */
+    /* height: 100%; */
+    /* background-color: rgba(252, 226, 216,0.7); */
+    margin:  auto;
+    border-radius: 10px;  
+    padding-top: 10px;
+    padding-bottom: 20px;  
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+form{
+    background-color: rgba(252, 226, 216,0.7);
+    /* margin: 0 auto; */
+    /* margin-right: 100px; */
+    width: 100%;
+    padding: 20px;
+    border: 2px solid rgb(255, 68, 68);
+    border-radius: 1rem;
+}
+input{
+    background-color: #fbfbfb; 
+    width: 300px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ED7878; 
+    margin-top: 10px;  
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 300px; 
+    height: 100px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ED7878; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+label{
+    display: inline-block; 
+    /* float: left;   */
+    text-align: right;
+    width: 100px;
+}
+button{
+    height: 40px; 
+    /* padding-left: 5px;
+    padding-right: 5px;    */
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    margin-left: 90px;
+    text-transform: uppercase;
+    background-color: #ED7878;
+    border: 2px solid #ED7878; 
+    border-radius: 10px;  
+    width: 300px;   
+    /* cursor: pointer; */
+}
+button p{
+    color: #fff; 
+}
+p{
+    font-size: 14px; 
+    /* color: #0e0e0e;  */
+} 
+input ::placeholder{
+    color: #a8a8a8;
+} 
+textarea::placeholder{
+    color: #a8a8a8;
+}
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+@media screen and (max-width: 980px) {
+    .cont{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+/* ---------------------------TERMINACONTACTO------------------------------- */
+
+
+
+/*  EMPIEZA FOOTER  */
+
+footer{
+    height: 100px;
+    background-color: rgb(252, 226, 216);
+}
+.fi{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;   
+    font-family: 'Amatic SC', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ED7878;
+}
+
+/*  TERMINA FOOTER  */
+
+
