@@ -43,38 +43,52 @@
             </div> 
           </nav>
     </header>
-    <main class="contacto"> 
-        <div class=" cont contacto1">
-            <h1 id="contacto">envianos un mensaje</h1>
-            <div class="contact_form"><div class="formulario">   
-                <form action="" method="">       
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre</label>    
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                    </p>
-                    <p>
-                        <label for="email" class="colocar_email">Email</label>
-                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                    </p>
-                    <p>
-                        <label for="tel" class="colocar_telefono">Teléfono</label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>    
-                    <p>
-                        <label for="asunto" class="colocar_asunto">Asunto</label>
-                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                    </p>    
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                    </p>                    
-                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-                </form>
-            </div>  
-            </div>
+    <main>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nombre">nombre</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nombre" name="nombre" placeholder="tu nombre..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="apellido">apellido</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="apellido" name="apellido" placeholder="tu apellido..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="asunto">asunto</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="asunto" name="asunto">
+                            <option value="mayor">venta por mayor</option>
+                            <option value="menor">venta por menor</option>
+                            <option value="otro">otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mensaje">mensaje</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="mensaje" name="mensaje" placeholder="escribe tu mensaje" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="enviar">
+                </div>
+            </form>
         </div>
-        <div class="cont contacto2"></div>
     </main>
+
     <footer>
         <h2 class="fi">fragancias internacionales</h2>
         <a href="https://www.instagram.com/baguesencias/." class="ig">
