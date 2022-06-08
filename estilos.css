@@ -3,17 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* header{ */
-    /* height: 100px; */
-    /* width: 100%; */
-    /* background-color: rgb(254, 227, 213); */
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* float: left; */
-    /* margin: auto; */
-    /* overflow: hidden; */
-/* } */
+
 :root{
     --color0: rgb(254, 227, 213);
     --color1: #ED7878;
@@ -27,60 +17,10 @@
 .nav-link{
     color: var(--color1)!important;
 
+} 
 
-/* header .logo{
-    float: left;
-} */
-/* header nav{
-    float: right;
-    width: 80%;
-} */
-/* header ul{
-    list-style: none;
-    font-family: 'Amatic SC';
-    font-size: 0;
-    text-transform: capitalize;
-} */
-/* header ul li{
-    /* float: left; */
-    /* display: inline-block; */
-    /* width: 20%; */
-    /* position: relative; */
-    /* font-size: 30px; */
-    /* padding: 20px; */
-} */
-/* nav a{
-    text-decoration: none;
-    color: #ED7878;
-} */
-/* nav a:hover{
-    color: #df2e64;
-} */
-/* @media screen and (max-width: 768px){
-    header ul li{
-        font-size: 25px;
-    }
-}
-@media screen and (max-width:600px){
-    header ul li{
-        font-size: 18px;
-    }    
-}
-@media screen and (min-width: 320px) and (max-width:480px) {
-    .logo{
-        float: none;
-        align-items: center;
-        text-align: center;
-    }
-    nav ul li{
-        float: none;
-        padding: 15px;
-    }
-} */
-
-
-/*  TERMINA HEADER  */
-body{
+/* ----------------------------------- TERMINA HEADER ----------------------------------- */
+/* body{
     background-image: url(imagenes/RNI-Films-IMG-E09D57B2-B39A-4387-B63D-F41F1977A950.jpg);
     background-size: cover;
     background-position: center;
@@ -88,7 +28,7 @@ body{
 body{
     font-family: 'Amatic SC', 'trebuchet MS', 'Arial';
     line-height: 1,7em;
-}
+} */
 h1{
     font-size: 50px;
     text-transform: uppercase;
@@ -292,8 +232,7 @@ section{
     color: rgb(252, 226, 216);
 }
 .agus{
-    margin-top: 100px;
-    margin-left: auto;
+    margin-left: 80vh;
 }
 .pnos{
     width: 400px;
@@ -307,10 +246,23 @@ section{
 .video{
     margin-left: 400px;
 }
+.car{
+    height: 100vh;
+    ;
+}
+
+.d-block{
+    height: 100vh;
+    object-fit: cover;
+}
 
 
 /* ---------------------------EMPIEZA CONTACTO------------------------------- */
-
+.contact{
+    background-image: url(imagenes/RNI-Films-IMG-8AB769C4-6976-49D6-B62B-BA651D710294.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 input[type=text], select, textarea{
     width: 100%;
@@ -338,7 +290,7 @@ input[type=text], select, textarea{
   
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242, 0.4);
     padding: 20px;
   }
   
